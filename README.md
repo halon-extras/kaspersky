@@ -1,4 +1,4 @@
-## kaspersky_av(fp, opts)
+## kaspersky_av(fp[, options])
 
 Scan a File pointer (fp) with Kaspersky Anti-virus (using HTTP POST). This function should be used with the [`per_message` cache](http://docs.halon.se/hsl/structures.html#cache).
 
