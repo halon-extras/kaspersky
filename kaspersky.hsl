@@ -1,6 +1,6 @@
 function kaspersky_av($fp, $opts = [])
 {
-	$host = $opts["timeout"] ?? "127.0.0.1";
+	$host = $opts["host"] ?? "127.0.0.1";
 	$port = $opts["port"] ?? 80;
 	$timeout = $opts["timeout"] ?? 2000;
 
