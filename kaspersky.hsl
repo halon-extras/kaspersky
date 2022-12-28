@@ -6,7 +6,7 @@ function kaspersky_av($fp, $opts = [])
 
 	$length = $fp->seek(0, "SEEK_END");
 	$fp->seek(0, "SEEK_SET");
-	$result = http($opts["host"].":".$opts["port"]."/scanmemory",
+	$result = http("http://".$host.":".$port."/scanmemory",
 				[
 					"timeout" => $timeout / 1000,
 					"extended_result" => true,
